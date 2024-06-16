@@ -6,3 +6,4 @@
 # --platform=linux/arm64 xiaoyaliu/alist
 
 ollama/ollama:latest
+gitlab/gitlab-ce:17.0.2-ce.0
