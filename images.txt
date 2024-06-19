@@ -5,6 +5,4 @@
 #支持指定架构
 # --platform=linux/arm64 xiaoyaliu/alist
 
-ollama/ollama:latest
-gitlab/gitlab-ce:17.0.2-ce.0
-ghcr.io/open-webui/open-webui:main
+emqx:5.6.1
