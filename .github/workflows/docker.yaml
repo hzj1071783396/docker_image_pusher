@@ -1,4 +1,4 @@
-name: pull-docker-from-dockerhub-to-aliyun-registry
+name: pull-${{ github.event.inputs.docker_image }}
 
 on:
   workflow_dispatch:
