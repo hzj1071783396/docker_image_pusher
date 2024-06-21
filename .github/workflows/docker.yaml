@@ -1,4 +1,4 @@
-name: pull-${{ github.event.inputs.docker_image }}
+name: push-docker-to-aliyun
 
 on:
   workflow_dispatch:
