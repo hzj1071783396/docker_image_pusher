@@ -2,11 +2,11 @@ name: pull-docker-from-dockerhub-to-aliyun-registry
 
 on:
   workflow_dispatch:
-  inputs:
-    docker_image:
-      description: 'Docker image to pull and push to Aliyun registry'
-      required: true
-      default: 'nginx:latest'
+    inputs:
+      docker_image:
+        description: 'Docker image to pull and push to Aliyun registry'
+        required: true
+        default: 'nginx:latest'
 
 
 env:
