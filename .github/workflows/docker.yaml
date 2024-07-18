@@ -72,7 +72,9 @@ jobs:
     - name: build and push image to Aliyun registry
       run: |
         echo "构建镜像 tag"
-        image_name_tag="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/${{ github.event.inputs.docker_image }}"
+        input_image_name=${{ github.event.inputs.docker_image }}
+        deal_image_name="${input_image_name##*/}"
+        image_name_tag="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$deal_image_name"
         docker tag ${{ github.event.inputs.docker_image }} $image_name_tag
         
         echo "开始推送镜像到阿里云"
